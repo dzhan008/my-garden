@@ -4,6 +4,7 @@ draft: false
 tags:
   - life
 date: 2026-09-17T00:00:00
+publish: true
 ---
 Today marks the day I publish my first note here on my site. I spent some time thinking about what to write, figuring out what platform to put this on, designing my Quartz setup, procrastinating, and so forth. I spent too much time on the minor details, and while I want to spruce up the site some more I figured this is a good start for me to post my content. To commemorate my first post, I decided to introduce this website using the 5 Ws (and 1 H).
 # Who?

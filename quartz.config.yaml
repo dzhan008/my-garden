@@ -112,7 +112,6 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
     options:
-      useThemeFonts: true
       fontOrigin: selfHosted
       title: Doto
       header: Doppio One

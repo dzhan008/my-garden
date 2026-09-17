@@ -5,6 +5,7 @@ tags:
   - life
 date: 2026-09-17
 unlisted: false
+publish: true
 ---
 Hi! I'm David, or Xolti. I am a developer, a game lover, and a game creator. My hobbies include:
 * Gaming (especially TTRPGs when I get the chance to)

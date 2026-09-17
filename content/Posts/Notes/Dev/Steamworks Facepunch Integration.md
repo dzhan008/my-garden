@@ -4,6 +4,7 @@ draft: false
 tags:
   - game-dev
 date: 2026-09-17
+publish: true
 ---
 This is a random info dump of my understanding of the Facepunch Steamworks library. This is mainly used to allow for Steam integration for multiplayer games. Getting it setup is a bit of a pain due to the lack of documentation, but its pretty straightforward once you get it running. You're likely going to rely on the Steamworks official documentation, though that can get a bit confusing too.
 

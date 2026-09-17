@@ -4,6 +4,7 @@ draft: true
 tags:
   - life
 date: 2026-05-04
+publish: false
 ---
 I built a shelf a few weeks back in an effort to spruce up my apartment and organize my knick-knacks in any place other than the floor. I am particularly proud of this shelf, despite a bit of damage incurred to one of the boards while I was constructing it. Here's a picture of the finished product:
 
