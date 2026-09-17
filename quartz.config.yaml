@@ -110,7 +110,7 @@ plugins:
     enabled: false
     order: 92
   - source: "@quartz-community/quartz-fonts"
-    enabled: true
+    enabled: false
     options:
       fontOrigin: selfHosted
       title: Doto
