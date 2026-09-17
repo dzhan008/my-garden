@@ -1,3 +1,80 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+// Style the Quartz 5 tag-list plugin
+.tag-list {
+  list-style: none;         // Removes the bullet points
+  padding: 0;
+  margin: 0.5rem 0 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;              // Spaces out the tags
+
+  li a {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--highlight);
+    color: var(--secondary);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var(--tertiary);
+      color: var(--light);
+    }
+  }
+}
+
+// Ensure that homepage does not have content meta info (like date)
+[data-slug="index"] .content-meta {
+  display: none;
+}
+
+// Set font for content meta and meta info (dates)
+.meta, .content-meta {
+  font-family: 'Geo', sans-serif;
+}
+
+// Fonts
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('static/fonts/Expletus_Sans/static/ExpletusSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geo';
+    src: url('static/fonts/Geo/Geo-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Inject a global image into Quartz v5's right sidebar column */
+[data-slug="index"] .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25%; /* 👈 Adjust this height to match your image's proportions */
+    background-image: url("/static/pixel_art_store.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    order: 2; /* 👈 High order value forces it to sit below the TOC/Backlinks */
+  }
+}
+
+/* Responsive adjustment: Hide the image on tablet and mobile viewports */
+@media (max-width: 1200px) {
+[data-slug="index"] .right::after {
+    display: none;
+  }
+}
