@@ -154,6 +154,8 @@ plugins:
     enabled: true
   - source: "@quartz-community/og-image"
     enabled: true
+    options:
+      colorScheme: darkMode
   - source: "@quartz-community/cname"
     enabled: true
   - source: "@quartz-community/canvas-page"
@@ -176,6 +178,7 @@ plugins:
     layout:
       position: left
       priority: 40
+      display: desktop-only
   - source: "@quartz-community/explorer"
     enabled: true
     options:
